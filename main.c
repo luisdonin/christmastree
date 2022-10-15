@@ -177,13 +177,15 @@ void drawScreen(gameData * game)
     if (game->treeSize > 20)
     {
 	setColor(COLOR_WHITE, COLOR_RED, 0);
-    	mvprintw((i-7)-game->treeSize,(j-21)-game->treeSize,"it's the xmas song");
-	clear();
+	mvprintw((i-7)-game->treeSize,(j-21)-game->treeSize, "I forgot the rest");
+	    
+	
     }
     if (game->treeSize > 30)
     {
 	setColor(COLOR_BLUE, COLOR_YELLOW, 0);
-	mvprintw((i-7)-game->treeSize,(j-21)-game->treeSize, "I forgot the rest");
+	mvprintw((i-7)-game->treeSize,(j-21)-game->treeSize,"it's the xmas song");
+	
     }
     refresh();
 }
